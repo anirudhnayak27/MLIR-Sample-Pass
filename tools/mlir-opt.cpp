@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
                   mlir::sample::sampledialect>();
   mlir::registerAllDialects(registry);
 
-  // context.appendDialectRegistry(registry);
+  context.appendDialectRegistry(registry);
   // context.loadAllAvailableDialects(); // optional but helpful
 
   mlir::PassPipelineRegistration<> typeCheckPipeline(
